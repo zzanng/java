@@ -1,7 +1,7 @@
 package javabasic;
 
 public class TypeCasting {
-	public static void main(String[] args) {
+	public static void main(StringExer[] args) {
 		
 //		기본타입의 형변환에서 표현범위가 작은 타입에서 큰타입으로의 형변환은 묵시적 (자동)
 		byte b = 100;

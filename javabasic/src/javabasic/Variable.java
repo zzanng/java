@@ -2,7 +2,7 @@ package javabasic;
 
 public class Variable {
 
-	public static void main(String[] args) {
+	public static void main(StringExer[] args) {
 		
 		byte b = 100;
 		short s = 30000;

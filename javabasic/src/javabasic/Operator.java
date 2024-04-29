@@ -1,7 +1,7 @@
 package javabasic;
 
 public class Operator {
-	public static void main(String[] args) {
+	public static void main(StringExer[] args) {
 		
 		int i = 100;
 		int j = -i;

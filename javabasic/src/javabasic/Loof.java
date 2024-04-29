@@ -7,9 +7,9 @@ import javax.imageio.spi.IIOServiceProvider;
 
 import org.w3c.dom.DOMStringList;
 
-public class Roof {
+public class Loof {
 	
-	public static void main(String[] args) {
+	public static void main(StringExer[] args) {
 		
 		//i++ 
 		//++i 후치

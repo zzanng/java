@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Condition { 
 	
 	
-	public static void main(String[] args) {
+	public static void main(StringExer[] args) {
 		
 		int i = 15;
 //		범위 지정 이 가능 한 부분 

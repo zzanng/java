@@ -1,7 +1,7 @@
 package javabasic;
 
 public class LoofExer {
-	public static void main(String[] args) {
+	public static void main(StringExer[] args) {
 		
 		// 별찍기1
 //		*
@@ -187,17 +187,38 @@ public class LoofExer {
 //		  *   
 		for(int i=0; i<keyn+1; i++) {
 		for (int j=0; j<keyn+1; j++)
-			if((keyn/2)==i || (keyn/2)==j   ) {
+			if((keyn/2)<i  ) {
 				
-			System.out.print("*");
+			System.out.print(" ");
 			}else {
-				System.out.print(" ");
+				System.out.print("*");
 			}
 
 			System.out.println();
 		}
 		
 		
+//		for(int j=1; j<keyn+1;j++) {
+//			for( int m=1; m<=keyn-j; m++) {
+//				//공백이 줄어들어야 하므로 -i
+//				System.out.print(" ");
+//		}
+//			for(int k=1; k<=2*j-1; k++) {
+//				//별의 찍는 횟수가 늘어나야 하므로 i
+//				System.out.print("*");
+//			}
+//			System.out.println("");
+//	}
+//		for( int i=1; i<keyn; i++) {
+//			for(int j=2; j<=1+i; j++) {//공백이 늘어나므로
+//				System.out.print(" ");
+//			}
+//			for(int k=1; k<=-2*i+7; k++) {//별의 찍는 횟수가 줄어들어야 하므로
+//				System.out.print("*");
+//			}
+//			System.out.println("");
+//		}
+//		
 		
 		
 		
