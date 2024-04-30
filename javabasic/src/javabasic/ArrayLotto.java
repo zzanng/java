@@ -44,14 +44,25 @@ public class ArrayLotto {
 	//math.random()	 0.0 랜덤실수 
 	//(int)(Math.random()*45)+1 : 1~45 중 랜덤한 정수
 		
-	Scanner sc = new sc (System.in);
-	int i = sc.nextInt();
+	Scanner sc = new Scanner (System.in);
 	
-
-	for (int i=0; i<7; i++) {
+	 String in1 = sc.next();
+	int [] intArray = new int[7];
+	int intArrayLeng = intArray.length;	
+	for (int i=0; i<intArrayLeng; i++) {
+		i = sc.nextInt();
+		
+		
+		
+	
+	}
+	
+	for (int j=0; j<7; j++) {
 		System.out.println((int)(Math.random()*45)+1);
 		
 	}
+	
+	
 		
 	
 		
