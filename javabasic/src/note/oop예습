@@ -1,0 +1,11 @@
+### OOP실습
+
+패키지 javabasic.oop.art
+
+Art  인터페이스
+
+Drawing , Music, Movie 클래스
+
+*미술 음악 영화 의 개별 메소드 정의 
+
+AtrMain 클래스를 생성해서 테스트 

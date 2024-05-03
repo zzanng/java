@@ -8,8 +8,11 @@ public class Constant {
 //	문자열 상수
 	public final String DAY_OF_WEEK = "월화수목금토일";
 //	숫자 상수
-	public final Double PI = 3.141592;
+	public static final Double PI = 3.141592;
 	
-	PI = 50.14;
-	
+
+	public static void main(String[] args) {
+	// Constant.PI =5.14;	
+}
+
 }
