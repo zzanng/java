@@ -9,7 +9,7 @@ public class Person implements Serializable{
 	
 	public String name;
 	public int age;
-	//private String sno;
+	private String sno;
 	
 	
 	

@@ -46,7 +46,7 @@ public class StudentScore implements Serializable {
 		return eng;
 	}
 	public void setEng(int eng) {
-		this.eng = eng;
+		this.eng = eng; 
 	}
 	public int getMath() {
 		return math;

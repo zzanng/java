@@ -1,6 +1,6 @@
 /*studentscore 데이터클래스생성 (int sno String name int kor int eng int math int total
  * IOExer에서 5개의 StudentScore 객체 생성후 asset / studentscore.dat 에 직렬화
- * 직렬화된 객체를 역직렬화하여 힉셍성적 데이터에 출력 
+ * 직렬화된 객체를 역직렬화하여 학생성적 데이터에 출력 
  * 출력시 과목별 총점도 출력  
  * 
  */
@@ -63,6 +63,13 @@ public class IOExer {
 			fnfe.printStackTrace();
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
+		}finally {
+			try {
+				ois.close();
+				oos.close();
+			}catch (IOException ioe) {
+				ioe.printStackTrace();
+			}
 		}
 
 	}
