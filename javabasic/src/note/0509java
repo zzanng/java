@@ -68,7 +68,7 @@ int printInfo(String str, int age) {
  -currentThread() : 현재 실행중인 쓰레드
  -getId() :쓰레드의 아이디 
  -getName() :쓰레드의 이름
- -getPriority() : 쓰레드의 우선순위 (높은게 먼저 수행될 확률이 높아짐.)
+ -getPriority() : 쓰레드의 우선순위 (높은게 먼저 수행될 확률이 높아짐.) 1~10 기본 5
  -setPriority() : 쓰레드의 우선순위설정 
  -getState() : 쓰레드의 상태
  -interrupt() : 현재 쓰레드의 인터럽트
@@ -79,7 +79,7 @@ int printInfo(String str, int age) {
  -join() : 현재쓰레드의 작업을 종료하고 다른 쓰레드 실행 
  -run() : 쓰레드가 수행할 작업을 정의. start()호출시 자동으로 실행
  -sleep() : 현재 쓰레드의 작업을 일정시간 (밀리세컨드)  중단하고 일정시간 후 현재쓰레드를 다시 수행
- -yield() : 현재 쓰레드의 작업을 다른 쓰레드가 실행완료될때까지 양보하고 다른 쓰레드가 실행완료 되면 현재 쓰레드의 작업을 다시 수행 
+ -yield() : 현재 쓰레드의 작업을 중단, 다른 쓰레드가 실행완료될때까지 양보하고 다른 쓰레드가 실행완료 되면 현재 쓰레드의 작업을 다시 수행 
  
   		
 
@@ -87,11 +87,11 @@ int printInfo(String str, int age) {
 *Thread State( 쓰레드상태)
 new: 쓰레드객체가 새로 생성됨 start() 전 
 runnable : 쓰레드가 JVM 의 Thread Scheduler에 의해 실행가능한 상태 
-rum: 쓰레드가 실행중인 상태 
+run: 쓰레드가 실행중인 상태 
 waiting : 쓰레드Runnable 상태가 되기 위한 대기상태
 	1)timed waiting : 지정한 시간만큼 대기 
 	2)waiting : 다른 쓰레드가 작업을 완전히 종료때까지 대기 
- 	*timed Waiting,waiting이 종료되면 runnable
+ 	*timed Waiting, waiting 이 종료되면 runnable
 blocked: I/O 작업과 같이 시작부터 끝까지 한번에 처리되어야만 하는 작업에 대한 특별한 상태 
 terminated : 쓰레드 객체가 메모리에서 소멸 
 
