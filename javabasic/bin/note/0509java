@@ -96,6 +96,7 @@ blocked: I/O 작업과 같이 시작부터 끝까지 한번에 처리되어야�
 terminated : 쓰레드 객체가 메모리에서 소멸 
 
 
+
 *Synchronization in Thread Processing(쓰레드 처리에서의 동기화)
 
 -Object 의 동기화관련 메소드 
