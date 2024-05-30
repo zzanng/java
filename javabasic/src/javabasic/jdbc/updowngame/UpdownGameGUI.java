@@ -13,8 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 import javabasic.jdbc.todo.Todo;
-import javabasic.jdbc.todo.TodoGUI;
-import javabasic.jdbc.todo.TodoLogic;
+
 
 public class UpdownGameGUI extends JFrame{
 	
@@ -25,58 +24,47 @@ public class UpdownGameGUI extends JFrame{
 		updownGame = new UpdownGame();
 		init();
 	}
-	
-
-	public static void main(String[] args) {
-		new UpdownGame();
-	}
-
-	// 어플리케이션 초기화 메소드
 	private void init() {
 
-		// 게임화면 설정
-		Panel gamepanel = new Panel(new FlowLayout());
-		Panel rowPanel = new Panel(new FlowLayout());
-
 		
-		rowPanel.add();
-		gamepanel.add(rowPanel);	
 		
-		//입력화면
-		Panel writePanel = new Panel(new BorderLayout());
-		JTextField ipNick = new JTextField(20);
-		JButton writeBtn = new JButton("확인");
-
-		writeBtn.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				String tfText = ipNick.getText();
-				if (tfText != null && !tfText.trim().equals("")) {
-					Todo todo = new Todo(0, tfText, null, null);
-					try {
-						todoLogic.writeTodo(todo);
-					} catch (Exception ex) {
-						ex.printStackTrace();
-					}
-				}
-			}
-
-		});
-		writePanel.add(ipNick, BorderLayout.CENTER);
-		writePanel.add(writeBtn, BorderLayout.EAST);
-
-		// 전체화면 설정
+		JLabel l1 = new JLabel("사용자 이름");
+		JLabel l2 = new JLabel("");
+		JTextField f1 = new JTextField(15); //15글자를 입력할 수 있는 텍스트필드
+		JButton b1 = new JButton("확인"); //가운데 정렬이 디폴트인 FlowLayout
+		
+//		b1.addActionListener(new ActionListener() {
+//			@Override
+//			public void actionPerformed(ActionEvent e) {
+//				String tfText = f1.getText();
+//				if (tfText != null && !tfText.trim().equals("")) {
+//			
+//					}
+//				}
+//			}
+//
+//		});
+		//여기서부터 순서 중요함!! FlowLayout이니깐
+		add(l1);
+		add(f1);
+		add(l2);
+		add(b1);
+		
+		
 		this.setTitle(":::JAVA UP & DOWN GAME APP:::");
-		this.setLayout(new BorderLayout());
+		this.setLayout(new FlowLayout());
 		this.setSize(400, 600);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE); // x 종료
 
-		this.add(gamepanel, BorderLayout.CENTER);
-		this.add(writePanel, BorderLayout.SOUTH);
-
-		// 화면 보여줘
-		this.setVisible(true);
-
+		
+		setVisible(true);
 	}
+
+	public static void main(String[] args) {
+		new UpdownGameGUI();
+	}
+
+
+	
 
 }// class

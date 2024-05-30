@@ -18,9 +18,80 @@ public class UpdownGame {
 	
 	public UpdownGame() {
 		
+		
+	}
+
+	public UpdownGame(HashMap<String, Integer> userMap, String nick, int sol, int count, int rank,
+			Timestamp createDate) {
+		super();
+		this.userMap = userMap;
+		this.nick = nick;
+		this.sol = sol;
+		this.count = count;
+		this.rank = rank;
+		this.createDate = createDate;
+	}
+
+	public HashMap<String, Integer> getUserMap() {
+		return userMap;
+	}
+
+	public void setUserMap(HashMap<String, Integer> userMap) {
+		this.userMap = userMap;
+	}
+
+	public String getNick() {
+		return nick;
+	}
+
+	public void setNick(String nick) {
+		this.nick = nick;
+	}
+
+	public int getSol() {
+		return sol;
+	}
+
+	public void setSol(int sol) {
+		this.sol = sol;
+	}
+
+	public int getCount() {
+		return count;
+	}
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+
+	public int getRank() {
+		return rank;
+	}
+
+	public void setRank(int rank) {
+		this.rank = rank;
+	}
+
+	public Timestamp getCreateDate() {
+		return createDate;
+	}
+
+	public void setCreateDate(Timestamp createDate) {
+		this.createDate = createDate;
+	}
+
+	@Override
+	public String toString() {
+		return "UpdownGame [userMap=" + userMap + ", nick=" + nick + ", sol=" + sol + ", count=" + count + ", rank="
+				+ rank + ", createDate=" + createDate + "]";
 	}
 	
 	
+
+	
+
+        
+
 	//유저생성, 정보입력 
 	public void UserInfo() {
 		Scanner input = new Scanner(System.in);
@@ -34,18 +105,6 @@ public class UpdownGame {
             UserInfo();
         }
     }
-
-	
-//insert 등록
-//	public int insertGuest(Guest guest) throws SQLException{
-//		String sql = " insert into guest value (seq_guest.nextval,?,?,?,?,sysdate ";
-//		pstmt = conn.prepareStatement(sql);
-//		pstmt.setString(1,guest.getgName());
-//		pstmt.setInt(2,guest.getgAge());
-//		pstmt.setString(3,guest.getgGender());
-//		pstmt.setString(4,guest.getgSid());
-//		return pstmt.executeUpdate(); 
-//		}
 	
 	//정답만들기 (난수생성 메소드)
 	public int solution() {
@@ -83,13 +142,9 @@ public class UpdownGame {
                 continue;
             }
         }System.out.println(nick+"님의 시도횟수는 " + count +"번으로 "+ rank + "등 입니다!");
-        
-        
-        
-
-
 
 	
 
 
-}}
+}
+}
